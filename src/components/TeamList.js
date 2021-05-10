@@ -9,13 +9,12 @@ const TeamList = () => {
   if (loading) {
     return <Loading></Loading>;
   }
-  if (teams.length < 1) {
-    return <h2>Kutas</h2>;
-  }
+  // if (teams.length < 1) {
+  //   return <h2>Search a team</h2>;
+  // }
   return (
     <section className="section">
-      <h2 className="section-title">cocktail list component</h2>
-      <div className="cocktails-center">
+      <div className="teams-center">
         {teams.map((item) => {
           return <Team key={item.team.id} {...item}></Team>;
         })}

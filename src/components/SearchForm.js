@@ -18,14 +18,16 @@ const SearchForm = () => {
     <section className="section search">
       <form className="search-form" onSubmit={handleSubmit}>
         <div className="form-control">
-          <label htmlFor="name"> search</label>
+          <label htmlFor="name"> Search a team</label>
           <input
             type="text"
             id="name"
             ref={searchValue}
             onChange={searchTeam}
           ></input>
-          <button type="submit">search</button>
+          <button type="submit" className="btn-primary">
+            search
+          </button>
         </div>
       </form>
     </section>

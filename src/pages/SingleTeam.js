@@ -59,13 +59,13 @@ export default function SingleTeam() {
   } else {
     // const { fixture, teams } = fixtures;
     return (
-      <section className="section cocktail-section">
+      <section className="section team-section">
         <Link to="/" className="btn btn-primary">
           back home
         </Link>
 
         <h2 className="section-title">Predictions</h2>
-        <div className="cocktails-center">
+        <div className="teams-center">
           {fixtures.map((item) => {
             return <Prediction key={item.fixture.id} {...item}></Prediction>;
           })}

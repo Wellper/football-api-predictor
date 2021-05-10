@@ -44,12 +44,13 @@ const Prediction = ({ fixture, teams }) => {
   }
   const { away, home } = teams;
   return (
-    <article className="cocktail">
+    <article className="team">
       <div className="img-container">
         <img src={home.logo} alt={home.name} />
+        <span>-</span>
         <img src={away.logo} alt={away.name} />
       </div>
-      <div className="cocktail-footer">
+      <div className="team-footer">
         <h4>{fixture.id}</h4>
         <h4>{prediction}</h4>
       </div>
