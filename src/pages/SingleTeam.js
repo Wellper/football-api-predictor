@@ -22,7 +22,7 @@ export default function SingleTeam() {
     async function getFixture() {
       try {
         const res = await fetch(
-          `https://api-football-v1.p.rapidapi.com/v3/fixtures?team=${id}&next=5`,
+          `https://api-football-v1.p.rapidapi.com/v3/fixtures?team=${id}&next=1`,
           requestOptions
         );
         const data = await res.json();

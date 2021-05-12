@@ -43,15 +43,17 @@ const Prediction = ({ fixture, teams }) => {
     return <h2 className="section-title">no nono</h2>;
   }
   const { away, home } = teams;
+  const regExp = /^([^T]+)/g;
+  const date = fixture.date.match(regExp);
+
   return (
     <article className="team">
       <div className="img-container">
         <img src={home.logo} alt={home.name} />
-        <span>-</span>
         <img src={away.logo} alt={away.name} />
       </div>
       <div className="team-footer">
-        <h4>{fixture.id}</h4>
+        <h4>{date}</h4>
         <h4>{prediction}</h4>
       </div>
     </article>

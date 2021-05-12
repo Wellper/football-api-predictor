@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import pages
 import Home from "./pages/Home";
-import About from "./pages/About";
 import SingleTeam from "./pages/SingleTeam";
 import Error from "./pages/Error";
 // import components
@@ -15,9 +14,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home></Home>
-          </Route>
-          <Route path="/about">
-            <About></About>
           </Route>
           <Route path="/team/:id">
             <SingleTeam></SingleTeam>
